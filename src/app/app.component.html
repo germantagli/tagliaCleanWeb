@@ -1,0 +1,29 @@
+<nav id="navbar-example2" class="fixed-top navbar navbar-light nav-tope" [ngClass]="{'nav-fuori-tope':!topeScroling}">
+  <a class="navbar-brand" href="#"><img src="/assets/logo-diapo.png" width="160"></a>
+  <ul class="nav nav-pills">
+    <li class="nav-item">
+      <a class="nav-link" href="#home">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#nosotros">Nosotros</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#servizios">Servicios</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contactos">Contactos</a>
+    </li>
+  </ul>
+</nav>
+  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+    <div id="home"><app-home ></app-home></div>
+    <div id="nosotros" ><app-nostros></app-nostros></div>
+    <div id="servizios" style="background-color: #ECF0F1" ><app-servicios ></app-servicios></div>
+    <div id="contactos" ><app-contactos></app-contactos></div>
+    <div style="background-color: #595959"><app-footer></app-footer></div>
+  </div>
+
+  <button *ngIf="!topeScroling"  class="arriba" (click)="vaiArriba()" ><span class="fa fa-chevron-up"></span></button>
+
+<app-socialbar></app-socialbar>
+<router-outlet></router-outlet>
