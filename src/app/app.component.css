@@ -2,12 +2,14 @@
 
     background:transparent;
     transition: all 2s ease;
+    height:85px;
   }
 
   .nav-fuori-tope {
     background:black;
     transition: all 2s ease;
     opacity: 0.9;
+    height:85px;
   }
 
   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
