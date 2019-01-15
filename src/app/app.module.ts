@@ -11,6 +11,7 @@ import { ContactosComponent } from './contactos/contactos.component';
 import { NostrosComponent } from './nostros/nostros.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialbarComponent } from './socialbar/socialbar.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SocialbarComponent } from './socialbar/socialbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FlexLayoutModule
 
   ],
   providers: [],
