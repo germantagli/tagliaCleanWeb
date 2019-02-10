@@ -1,29 +1,75 @@
-<!-- <nav id="navbar-example2" class="fixed-top navbar navbar-light nav-tope" [ngClass]="{'nav-fuori-tope':!topeScroling}">
-  <a class="navbar-brand" href="#"><img src="/assets/logo-diapo.png" width="160"></a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="#home">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#nosotros">Nosotros</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#servizios">Servicios</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#contactos">Contactos</a>
-    </li>
-  </ul>
-</nav>
-  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-    <div id="home"><app-home ></app-home></div>
-    <div id="nosotros" style="background-color: #ECF0F1"><app-nostros></app-nostros></div>
-    <div id="servizios" style="margin-top: -90px" ><app-servicios ></app-servicios></div>
-    <div id="contactos" style="background-color: #ECF0F1" ><app-contactos></app-contactos></div>
-    <div style="background-color: #595959"><app-footer></app-footer></div>
+
+<!-- Telefono -->
+<div fxHide.gt-xs="true">
+    <nav id="navbar-example3" class="fixed-top navbar navbar-light nav-fuori-tope">
+        
+        <li class="nav-item dropdown navbar-brand ">
+            <a class="nav-link " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars hamburger"></i></a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#homeTel">Home</a>
+              <a class="dropdown-item" href="#nosotrosTel">Chi Siamo</a>
+              <a class="dropdown-item" href="#serviziosTel">Servizi</a>
+             
+            </div>
+          </li>
+          <a class="navbar-brand" href="#"><img src="/assets/favicon.png" width="50"></a>
+      </nav>
+      <br><br><br>
+      <div id="homeTel" class="embed-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.2752925627606!2d12.53992781495691!3d41.908440379219776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f63ce319032ab%3A0x9d80ac3ab4928fa0!2sVia+Tiburtina%2C+528%2C+00159+Roma+RM!5e0!3m2!1ses!2sit!4v1547988180268" width="310" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>         
+      </div>
+    <div class="container" style="text-align: center; margin-top: 10px">
+        <button  class="social-facebook"  ><span class="  fa fa-facebook" ></span></button> 
+        <button  class="social-twiter"  ><span class=" fa fa-twitter"></span></button> 
+        <button  class="social-youtube" ><span class=" fa fa-youtube"></span></button> 
+        <button  class="social-istagram"  ><span class=" fa fa-instagram"></span></button> 
+    </div>
+
+      
+      
+      
+   
+      <div id="serviziosTel"><app-service-mobile></app-service-mobile></div>
+      
+      <div id="nosotrosTel" style="background-color: #ECF0F1"><app-nosotros-mobile></app-nosotros-mobile></div>
+
+      <div style="background-color: #595959"><app-footer></app-footer></div>
+      <a  class="celular"  href="tel:+39 3457613300" ><span class="fa fa-phone"></span></a> 
+      
   </div>
 
-  <button *ngIf="!topeScroling"  class="arriba" (click)="vaiArriba()" ><span class="fa fa-chevron-up"></span></button>
+  <!-- Web -->
+  <div fxHide.lt-sm="true">
+      <nav id="navbar-example2" class="fixed-top navbar navbar-light nav-tope" [ngClass]="{'nav-fuori-tope':!topeScroling}">
+          <a class="navbar-brand" href="#"><img src="/assets/logo-diapo.png" width="160"></a>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nosotros">Chi siamo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servizios">Servizi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contactos">Contatti</a>
+            </li>
+          </ul>
+        </nav>
+          <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+            <div id="home"><app-home ></app-home></div>
+            <div id="nosotros" style="background-color: #ECF0F1"><app-nostros></app-nostros></div>
+            <div id="servizios" style="margin-top: -90px" ><app-servicios ></app-servicios></div>
+            <div id="contactos" style="background-color: #ECF0F1" ><app-contactos></app-contactos></div>
+            <div style="background-color: #595959"><app-footer></app-footer></div>
+          </div>
+        
+          <app-socialbar></app-socialbar> 
+       
+          <button *ngIf="!topeScroling"  class="arriba" (click)="vaiArriba()" ><span class="fa fa-chevron-up"></span></button> 
+  </div>
 
-<app-socialbar></app-socialbar>
-<router-outlet></router-outlet> -->
+  
+
+<router-outlet></router-outlet>

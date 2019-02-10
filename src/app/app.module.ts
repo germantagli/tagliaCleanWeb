@@ -12,6 +12,9 @@ import { NostrosComponent } from './nostros/nostros.component';
 import { FooterComponent } from './footer/footer.component';
 import { SocialbarComponent } from './socialbar/socialbar.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HomeMobileComponent } from './home-mobile/home-mobile.component';
+import { ServiceMobileComponent } from './service-mobile/service-mobile.component';
+import { NosotrosMobileComponent } from './nosotros-mobile/nosotros-mobile.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ContactosComponent,
     NostrosComponent,
     FooterComponent,
-    SocialbarComponent
+    SocialbarComponent,
+    HomeMobileComponent,
+    ServiceMobileComponent,
+    NosotrosMobileComponent
   ],
   imports: [
     BrowserModule,
